@@ -1,0 +1,13 @@
+# Plugins are managed by TPM — do not commit them
+plugins/
+
+# Keep TPM itself so the bootstrap works without internet access
+!plugins/tpm/
+
+# OS / editor noise
+.DS_Store
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
