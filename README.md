@@ -8,7 +8,7 @@
 - Vi-style copy mode with system clipboard integration
 - Mouse support enabled
 - True color (24-bit) support for modern terminals
-- Session persistence across restarts (resurrect + continuum)
+- Session persistence (resurrect: manual save/restore)
 - Fuzzy search across scrollback, URLs, and terminal output
 - Sidebar directory tree, copycat search, and a command palette
 
@@ -71,7 +71,6 @@ tmux
 | [tpm](https://github.com/tmux-plugins/tpm) | Plugin manager |
 | [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible) | Sensible default settings |
 | [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect) | Save and restore sessions manually |
-| [tmux-continuum](https://github.com/tmux-plugins/tmux-continuum) | Auto-save sessions every 15 min |
 | [tmux-yank](https://github.com/tmux-plugins/tmux-yank) | Copy to system clipboard |
 | [tmux-copycat](https://github.com/tmux-plugins/tmux-copycat) | Regex search in scrollback |
 | [tmux-sidebar](https://github.com/tmux-plugins/tmux-sidebar) | Directory tree sidebar |
@@ -163,14 +162,12 @@ tmux
 
 ---
 
-## Session Persistence — tmux-resurrect / tmux-continuum
+## Session Persistence — tmux-resurrect
 
 | Key | Action |
 |-----|--------|
 | `prefix + Ctrl-s` | Save session |
 | `prefix + Ctrl-r` | Restore session |
-
-> tmux-continuum auto-saves every 15 minutes and restores on startup.
 
 ---
 
