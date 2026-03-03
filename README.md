@@ -26,30 +26,40 @@
 
 ## Installation
 
-**1. Clone this repository into your tmux config directory:**
+### One-liner
 
 ```sh
-git clone https://github.com/tiagobastos/tmux-config ~/.config/tmux
+curl -fsSL https://raw.githubusercontent.com/bastos/dot-tmux/main/install.sh | bash
 ```
 
-**2. Install TPM:**
+The script will:
+- Back up any existing `~/.config/tmux` directory
+- Clone this repo into `~/.config/tmux`
+- Install TPM and all plugins
+- Install `reattach-to-user-namespace` on macOS (requires Homebrew)
+- Install `fzf` automatically (Homebrew on macOS; apt / pacman / dnf on Linux)
 
-```sh
-git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
-```
-
-**3. Start tmux and install plugins:**
+Then just start tmux:
 
 ```sh
 tmux
 ```
 
-Then press `prefix + I` to fetch and install all plugins.
-
-**4. (macOS only) Install clipboard helper:**
+### Manual
 
 ```sh
+# 1. Clone
+git clone https://github.com/bastos/dot-tmux.git ~/.config/tmux
+
+# 2. Install TPM
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+
+# 3. (macOS) clipboard helper
 brew install reattach-to-user-namespace
+
+# 4. Start tmux and install plugins
+tmux
+# press prefix + I
 ```
 
 ---
