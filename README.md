@@ -1,6 +1,6 @@
 # tmux Configuration
 
-> My personal [tmux](https://github.com/tmux/tmux) configuration — a productive terminal multiplexer setup tuned for macOS (and usable on Linux) with a clean Ghostty-inspired dark theme, vi-style keybindings, and a hand-picked set of plugins managed by [TPM](https://github.com/tmux-plugins/tpm).
+My personal [tmux](https://github.com/tmux/tmux) configuration — a productive terminal multiplexer setup tuned for macOS (and usable on Linux) with a clean Ghostty-inspired dark theme, vi-style keybindings, and a hand-picked set of plugins managed by [TPM](https://github.com/tmux-plugins/tpm).
 
 ## Features
 
